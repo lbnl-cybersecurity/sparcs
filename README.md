@@ -1,5 +1,5 @@
 
-# SPACS
+# SPARCS
 This software reads from uPMUs and sends data out to RabbitMQ and Cassandra. There are 2 versions of this code one that Reads C37.118 and the other grabs data via FTP. The RabbitMQdata is formatted in JSON format and can easily be ingested in other systems. We are using an ELK stack and also have sucessfully pushed data to Splunk and OSISoft-Pisystem. Cassandra data is encoded with protobufs and can be read via the readfastfromCassandra tool that quickly extracts data out of cassandra, and optionaly and ships it to a remote client (included in package). This tool is best run close to the cassandra server for maximum speed.
 
 Configuation files are in the configuration file folder and need to be configured accordingly.
