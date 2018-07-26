@@ -1,5 +1,5 @@
 
-# SPARCS
+# LBNL Stream-Processing Architecture for Real-time Cyber-physical Security (SPARCS) 
 This software reads from PSL micro-PMUs (µPMUs) and sends data out to RabbitMQ and Cassandra. There are two versions of this code --- one that reads via the C37.118 protocol and the other grabs data via FTP. The RabbitMQ data is formatted in JSON format and can easily be ingested in other systems. We are using an ELK stack and also have sucessfully pushed data to Splunk and OSISoft-Pisystem. Cassandra data is encoded with Protocol Buffers (protobufs) and can be read via the readfastfromCassandra tool that quickly extracts data out of cassandra, and optionaly and ships it to a remote client (included in package). This tool is best run close to the Cassandra server for low latency / packet loss.
 
 Configuation files are in the configuration file folder and need to be configured accordingly.
