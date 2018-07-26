@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>../../../distributions/datastax-cpp-driver-5d694f4/include/cassandra.h</itemPath>
+      <itemPath>oneSecDataFormat.h</itemPath>
+      <itemPath>serviceDataArchiver.h</itemPath>
+      <itemPath>../serviceInstanceTemplateApp/serviceDataBuffer.h</itemPath>
+      <itemPath>../uPMUgateway/serviceInstanceApi.h</itemPath>
+      <itemPath>serviceSpecificStats.h</itemPath>
+      <itemPath>../uPMUgateway/uPMUgmtime.h</itemPath>
+      <itemPath>../uPMUgateway/upmuDataProtobuf.pb.h</itemPath>
+      <itemPath>../uPMUgateway/upmuStructKeyValueListProtobuf.pb.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>serviceDataArchiver.cpp</itemPath>
+      <itemPath>serviceSpecificStats.cpp</itemPath>
+      <itemPath>../uPMUgateway/uPMUgmtime.cpp</itemPath>
+      <itemPath>../uPMUgateway/upmuDataProtobuf.pb.cc</itemPath>
+      <itemPath>../uPMUgateway/upmuStructKeyValueListProtobuf.pb.cc</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>../uPMUgateway</pElem>
+            <pElem>/home/distributions/cassandra/datastax-cpp-driver/include</pElem>
+            <pElem>../serviceDataDiscovery_C37</pElem>
+          </incDir>
+          <commandLine>-std=c++11</commandLine>
+        </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>../../../distributions/datastax-cpp-driver-5d694f4/build</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibLibItem>protobuf</linkerLibLibItem>
+            <linkerLibLibItem>cassandra</linkerLibLibItem>
+          </linkerLibItems>
+          <commandLine>-L/usr/local/lib/arm-linux-gnueabihf -L/usr/local/lib -L/usr/local/lib/x86_64-linux-gnu -lboost_system -ldl -lboost_filesystem -lboost_thread -L../../../distributions/datastax-cpp-driver-5d694f4/build -lprotobuf -lcassandra -lrabbitmq -lSimpleAmqpClient</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="../../../distributions/datastax-cpp-driver-5d694f4/include/cassandra.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../serviceInstanceTemplateApp/serviceDataBuffer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../uPMUgateway/serviceInstanceApi.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../uPMUgateway/uPMUgmtime.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../uPMUgateway/uPMUgmtime.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../uPMUgateway/upmuDataProtobuf.pb.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../uPMUgateway/upmuDataProtobuf.pb.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../uPMUgateway/upmuStructKeyValueListProtobuf.pb.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../uPMUgateway/upmuStructKeyValueListProtobuf.pb.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="oneSecDataFormat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceDataArchiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="serviceDataArchiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceSpecificStats.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="serviceSpecificStats.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="../../../distributions/datastax-cpp-driver-5d694f4/include/cassandra.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../serviceInstanceTemplateApp/serviceDataBuffer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../uPMUgateway/serviceInstanceApi.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../uPMUgateway/uPMUgmtime.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../uPMUgateway/uPMUgmtime.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../uPMUgateway/upmuDataProtobuf.pb.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../uPMUgateway/upmuDataProtobuf.pb.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../uPMUgateway/upmuStructKeyValueListProtobuf.pb.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../uPMUgateway/upmuStructKeyValueListProtobuf.pb.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="oneSecDataFormat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceDataArchiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="serviceDataArchiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceSpecificStats.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="serviceSpecificStats.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

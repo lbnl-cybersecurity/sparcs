@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>/usr/local/include/cassandra.h</itemPath>
+      <itemPath>dataFileInstance.h</itemPath>
+      <itemPath>serviceDataDiscovery.h</itemPath>
+      <itemPath>/home/rainer/NetBeansProjects/upmuGateway-uPMUgateway/serviceInstanceApi.h</itemPath>
+      <itemPath>serviceSpecificStats.h</itemPath>
+      <itemPath>swapBytesTemplate.h</itemPath>
+      <itemPath>/home/rainer/NetBeansProjects/upmuGateway-uPMUgateway/uPMUgmtime.h</itemPath>
+      <itemPath>upmuFtpAccess.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>dataFileInstance.cpp</itemPath>
+      <itemPath>serviceDataDiscovery.cpp</itemPath>
+      <itemPath>../uPMUgateway/serviceOperationsLoggerCassandra.cpp</itemPath>
+      <itemPath>../uPMUgateway/serviceOperationsLoggerCassandra.h</itemPath>
+      <itemPath>serviceSpecificStats.cpp</itemPath>
+      <itemPath>../uPMUgateway/uPMUgmtime.cpp</itemPath>
+      <itemPath>upmuFtpAccess.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+      <logicalFolder name="f1" displayName="dateTest" projectFiles="true" kind="TEST">
+        <itemPath>tests/newsimpletest.cpp</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <itemPath>../uPMUgateway/dbConnection.cpp</itemPath>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>/usr/local/include</Elem>
+    <Elem>/home/rainer/NetBeansProjects/upmuGateway-uPMUgateway</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>../uPMUgateway</pElem>
+            <pElem>/home/distributions/cassandra/datastax-cpp-driver/include</pElem>
+            <pElem>/home/rainer/NetBeansProjects/upmuGateway-uPMUgateway</pElem>
+            <pElem>/usr/local/include</pElem>
+          </incDir>
+          <commandLine>-std=c++11</commandLine>
+        </ccTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibLibItem>curl</linkerLibLibItem>
+            <linkerLibLibItem>cassandra</linkerLibLibItem>
+            <linkerLibLibItem>protobuf</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../uPMUgateway/dbConnection.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../uPMUgateway/serviceOperationsLoggerCassandra.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../uPMUgateway/serviceOperationsLoggerCassandra.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../uPMUgateway/uPMUgmtime.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/home/rainer/NetBeansProjects/upmuGateway-uPMUgateway/serviceInstanceApi.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/rainer/NetBeansProjects/upmuGateway-uPMUgateway/uPMUgmtime.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/usr/local/include/cassandra.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dataFileInstance.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="dataFileInstance.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+        </linkerTool>
+      </folder>
+      <item path="serviceDataDiscovery.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="serviceDataDiscovery.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceSpecificStats.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="serviceSpecificStats.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="swapBytesTemplate.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/newsimpletest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="upmuFtpAccess.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="upmuFtpAccess.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="../uPMUgateway/dbConnection.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../uPMUgateway/serviceOperationsLoggerCassandra.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../uPMUgateway/serviceOperationsLoggerCassandra.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../uPMUgateway/uPMUgmtime.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/home/rainer/NetBeansProjects/upmuGateway-uPMUgateway/serviceInstanceApi.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/rainer/NetBeansProjects/upmuGateway-uPMUgateway/uPMUgmtime.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/usr/local/include/cassandra.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dataFileInstance.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="dataFileInstance.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+        </linkerTool>
+      </folder>
+      <item path="serviceDataDiscovery.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="serviceDataDiscovery.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceSpecificStats.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="serviceSpecificStats.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="swapBytesTemplate.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/newsimpletest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="upmuFtpAccess.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="upmuFtpAccess.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

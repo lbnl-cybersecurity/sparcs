@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>/usr/local/include/cassandra.h</itemPath>
+      <itemPath>dbConnection.h</itemPath>
+      <itemPath>domainAndMessageTypes.h</itemPath>
+      <itemPath>serviceCommand.h</itemPath>
+      <itemPath>serviceCommandQueueTemplate.h</itemPath>
+      <itemPath>serviceCommonStats.h</itemPath>
+      <itemPath>serviceDataBuffer.h</itemPath>
+      <itemPath>serviceInstance.h</itemPath>
+      <itemPath>serviceInstanceApi.h</itemPath>
+      <itemPath>serviceInstanceList.h</itemPath>
+      <itemPath>serviceOperationsLoggerCassandra.h</itemPath>
+      <itemPath>serviceOperationsLoggerPostgres.h</itemPath>
+      <itemPath>serviceQueue.h</itemPath>
+      <itemPath>serviceStatus.h</itemPath>
+      <itemPath>uPMUgmtime.h</itemPath>
+      <itemPath>uPMUparticulars.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+      <itemPath>upmuDataProtobuf.proto</itemPath>
+      <itemPath>upmuStructKeyValueListProtobuf.proto</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>dbConnection.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+      <itemPath>serviceCommonStats.cpp</itemPath>
+      <itemPath>serviceInstance.cpp</itemPath>
+      <itemPath>serviceInstanceList.cpp</itemPath>
+      <itemPath>serviceOperationsLoggerCassandra.cpp</itemPath>
+      <itemPath>serviceOperationsLoggerPostgres.cpp</itemPath>
+      <itemPath>uPMUgmtime.cpp</itemPath>
+      <itemPath>upmuStructKeyValueListProtobuf.pb.cc</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>/usr/local/include</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>/home/distributions/cassandra/datastax-cpp-driver/include</pElem>
+            <pElem>../serviceDataDiscovery</pElem>
+            <pElem>/usr/local/lib/x86_64-linux-gnu</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/lib/arm-linux-gnueabihf/</pElem>
+          </incDir>
+          <commandLine>-std=c++11 -rdynamic -Wl,--export-dynamic</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/upmugateway</output>
+          <linkerLibItems>
+            <linkerLibLibItem>boost_system</linkerLibLibItem>
+            <linkerLibLibItem>dl</linkerLibLibItem>
+            <linkerLibLibItem>boost_filesystem</linkerLibLibItem>
+            <linkerLibLibItem>boost_thread</linkerLibLibItem>
+            <linkerLibLibItem>protobuf</linkerLibLibItem>
+            <linkerLibLibItem>curl</linkerLibLibItem>
+            <linkerLibLibItem>pqxx</linkerLibLibItem>
+            <linkerLibLibItem>cassandra</linkerLibLibItem>
+            <linkerLibLibItem>log4cpp</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="/usr/local/include/cassandra.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dbConnection.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="dbConnection.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="domainAndMessageTypes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="serviceCommand.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceCommandQueueTemplate.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceCommonStats.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="serviceCommonStats.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceDataBuffer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceInstance.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="serviceInstance.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceInstanceApi.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceInstanceList.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="serviceInstanceList.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceOperationsLoggerCassandra.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="serviceOperationsLoggerCassandra.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceOperationsLoggerPostgres.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="serviceOperationsLoggerPostgres.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceQueue.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceStatus.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="uPMUgmtime.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="uPMUgmtime.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="uPMUparticulars.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="upmuDataProtobuf.proto" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="upmuStructKeyValueListProtobuf.pb.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="upmuStructKeyValueListProtobuf.proto"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="/usr/local/include/cassandra.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dbConnection.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="dbConnection.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="domainAndMessageTypes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="serviceCommand.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceCommandQueueTemplate.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceCommonStats.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="serviceCommonStats.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceDataBuffer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceInstance.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="serviceInstance.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceInstanceApi.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceInstanceList.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="serviceInstanceList.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceOperationsLoggerCassandra.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="serviceOperationsLoggerCassandra.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceOperationsLoggerPostgres.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="serviceOperationsLoggerPostgres.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceQueue.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="serviceStatus.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="uPMUgmtime.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="uPMUgmtime.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="uPMUparticulars.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="upmuDataProtobuf.proto" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="upmuStructKeyValueListProtobuf.pb.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="upmuStructKeyValueListProtobuf.proto"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

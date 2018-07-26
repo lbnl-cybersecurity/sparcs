@@ -1,0 +1,24 @@
+syntax = "proto2";
+package serviceCassSpeed;
+
+message samplesets{
+    required string name = 1 ;
+    repeated float sample = 2 [packed = true];
+}
+
+
+message output {
+    required string deviceid = 1;
+    repeated samplesets sampleset = 2;
+}
+
+message cassspeed {
+    required uint64 timeStampStart = 1;
+    optional uint64 timeStampEnd = 2;
+    optional float sampleIntervalMsec = 3;
+    optional uint32 numSamples = 4;
+    optional int32 numDevices = 5;
+    repeated output outputsets = 6;
+    optional int32 status = 7;
+}
+    

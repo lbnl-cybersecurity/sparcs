@@ -1,0 +1,25 @@
+syntax = "proto2";
+package serviceDataDiscovery;
+
+message syncPoint {
+    required float angle = 1;
+    required float mag = 2;
+}
+
+message syncOutput {
+    required uint32 lockState = 1;
+    required syncPoint L1 = 2;
+    required syncPoint L2 = 3;
+    required syncPoint L3 = 4;
+    required syncPoint C1 = 5;
+    required syncPoint C2 = 6;
+    required syncPoint C3 = 7;
+}
+
+message upmuData {
+    required uint32 timeStamp = 1;
+    required float sampleIntervalMsec = 2;
+    required uint32 numSamples = 3;
+    repeated syncOutput sample = 4;
+}
+    
